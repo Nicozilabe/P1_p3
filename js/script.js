@@ -111,7 +111,12 @@ function ej9() {
 function ej10() {
     let numero1 = parseInt(document.querySelector("#txt1Ej10").value);
     let numero2 = parseInt(document.querySelector("#txt2Ej10").value);
-    let resultado = numero1;
+    let resultado;
+    if (numero1===numero2){
+        resultado=numero1;
+    }else {
+        resultado=1;
+    }
     for (i = numero1; i <= numero2; i++) {
             resultado *= i
     }
